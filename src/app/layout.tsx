@@ -4,6 +4,7 @@ import { StoreProvider } from '@/lib/store';
 import { Sidebar } from '@/components/shell/Sidebar';
 import { Topbar } from '@/components/shell/Topbar';
 import './globals.css';
+import { SiteCredit } from '@/components/SiteCredit';
 
 export const metadata: Metadata = {
   title: 'Reach — CRM for teams that close things',
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </div>
           </div>
         </StoreProvider>
+        <SiteCredit />
       </body>
     </html>
   );
